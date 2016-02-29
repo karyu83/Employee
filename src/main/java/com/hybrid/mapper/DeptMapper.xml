@@ -36,7 +36,7 @@
 	    update dept
 	       set dname = #{dname},
 	             loc = #{loc}
-	     where depto = #{deptno}
+	     where deptno = #{deptno}
 	</update>
 	
 	<delete id="deleteByDeptno" parameterType="int">

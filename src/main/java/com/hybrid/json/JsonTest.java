@@ -25,8 +25,14 @@ public class JsonTest {
 	d1.setDname("개발부");
 	d1.setLoc("부산");
 	
+	Dept d2 = new Dept();
+	d1.setDeptno(30);
+	d1.setDname("개발부");
+	d1.setLoc("부산");
+	
 	depts.add(d);
 	depts.add(d1);
+	depts.add(d2);
 	
 	String json = mapper.writeValueAsString(depts);
 	System.out.println(json);

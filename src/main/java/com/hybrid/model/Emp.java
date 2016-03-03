@@ -2,12 +2,18 @@ package com.hybrid.model;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+
 public class Emp {
 	int empno;
 	String ename;
 	String job;
 	Integer mgr;
+	
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
 	Date hiredate;
+	
 	Float sal;
 	Float comm;
 	Integer deptno;
